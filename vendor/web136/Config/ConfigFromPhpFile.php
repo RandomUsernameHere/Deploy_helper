@@ -13,7 +13,7 @@ use web136\Exceptions\InvalidParametersException;
 use web136\FileTools;
 
 
-class AbstractConfigFromPhpFile extends AbstractConfigFromFile{
+class ConfigFromPhpFile extends AbstractConfigFromFile{
 	
 	public function setConfigArray ($param = false) {
 		/**@noinspection PhpIncludeInspection*/

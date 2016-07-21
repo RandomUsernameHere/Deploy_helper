@@ -22,7 +22,7 @@ abstract class AbstractConfigFromFile extends AbstractConfig{
 	public function __construct ($path) {
 		$this->configFile = new  FileTools\File($path);
 
-		if(!$this->configFile['readable']){
+		if(!$this->configFile['is_readable']){
 			throw new \Exception("There are not readable config file {$this->configFile['path']}");
 		}
 
